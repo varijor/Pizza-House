@@ -1,0 +1,252 @@
+html {
+  background-color: #fff;
+  color: #636b6f;
+  font-family: "Nunito", sans-serif;
+  font-weight: 200;
+  margin: 0;
+}
+
+footer {
+  background: #eee;
+  padding: 20px;
+  text-align: center;
+}
+
+.title {
+  font-size: 50px;
+  text-transform: uppercase;
+  border-bottom: 2px solid;
+  padding: 12px 0;
+  color: #5e2195;
+}
+
+.wrapper {
+  max-width: 1140px;
+  padding: 10px;
+  margin: 20px auto;
+}
+
+/* pizza main page */
+main {
+  /* details page */
+  /* create pizza form */
+  /* pizza details page */
+  /* pizza index page */
+}
+main .pizza-main-container {
+  min-height: 90vh;
+}
+main .pizza-main-container .title {
+  width: 100%;
+  margin: 0 auto;
+}
+main .pizza-main-container .message {
+  margin-top: 10px;
+  font-size: 20px;
+  font-weight: 600;
+  color: red;
+}
+main .pizza-main-container .container {
+  width: -moz-fit-content;
+  width: fit-content;
+}
+main .pizza-main-container a {
+  font-size: 18px;
+  transition: all 0.3s ease;
+}
+main .pizza-main-container a:hover {
+  color: #000;
+}
+main .pizza-main-container button {
+  background: #5e2195;
+  padding: 8px 20px;
+  color: #fff;
+  border: 0;
+  border-radius: 5px;
+  margin-top: 20px;
+}
+main .pizza-main-container button:hover {
+  background: #cca0f3;
+  outline: 1px solid #5e2195;
+  color: black;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+main .pizza-main-container ol {
+  list-style-type: none;
+  counter-reset: li;
+  padding: 0;
+}
+main .pizza-main-container ol li {
+  position: relative;
+  margin-bottom: 1em;
+  padding-left: 2em;
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: #333;
+  text-shadow: 1px 1px 1px #fff;
+  display: flex;
+  justify-content: space-between;
+}
+main .pizza-main-container ol li .details {
+  display: inline-block;
+  margin: 0 10px;
+  padding: 10px 20px;
+  background-color: #ff9800;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.2s ease;
+}
+main .pizza-main-container ol .details:hover {
+  background-color: #5e2195;
+}
+main .pizza-main-container ol li::before {
+  content: counter(li);
+  counter-increment: li;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 1.5em;
+  height: 1.5em;
+  border-radius: 50%;
+  background-color: #5e2195;
+  border: 1px solid orange;
+  text-align: center;
+  line-height: 1.5em;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: whitesmoke;
+  text-shadow: none;
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1);
+}
+main .details-main-container {
+  padding: 20px;
+}
+main .details-main-container > div {
+  max-width: 600px;
+  padding: 50px;
+  background-color: #fff;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+main .details-main-container > div h1 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  color: #CC2936;
+}
+main .details-main-container > div h2 {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 5px;
+}
+main .details-main-container > div ul {
+  margin-top: 10px;
+  margin-left: 20px;
+  color: #555;
+}
+main .details-main-container > div ul li {
+  margin-bottom: 5px;
+}
+main .details-main-container > div button {
+  background: #5e2195;
+  padding: 8px 20px;
+  color: #fff;
+  border: 0;
+  border-radius: 5px;
+  margin-top: 20px;
+}
+main .details-main-container > div button:hover {
+  background: #cca0f3;
+  outline: 1px solid #5e2195;
+  color: black;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+main .details-main-container > div p {
+  margin-top: 20px;
+  color: #666;
+}
+main .details-main-container > div img {
+  max-width: 150px;
+}
+main .create-pizza {
+  background: #fff;
+  padding: 20px;
+}
+main .create-pizza label, main .create-pizza select {
+  display: block;
+}
+main .create-pizza label {
+  margin-top: 30px;
+}
+main .create-pizza select {
+  padding: 8px;
+  width: 200px;
+}
+main .create-pizza input[type=checkbox] {
+  margin: 10px;
+}
+main .create-pizza input[type=submit] {
+  background: #5e2195;
+  padding: 8px 20px;
+  color: #fff;
+  border: 0;
+  border-radius: 5px;
+  margin-top: 20px;
+}
+main .create-pizza input[type=submit]:hover {
+  background: #cca0f3;
+  outline: 1px solid #5e2195;
+  color: black;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+main .create-pizza fieldset {
+  padding: 0;
+  border: none;
+}
+main .pizza-details {
+  background: #f7f7f7;
+  padding: 20px;
+}
+main .pizza-details p {
+  margin: 20px 0;
+  font-weight: bold;
+}
+main .pizza-details button {
+  background: #5e2195;
+  padding: 8px 20px;
+  color: #fff;
+  border: 0;
+  margin-top: 20px;
+}
+main a.back {
+  display: block;
+  text-align: center;
+  margin-top: 30px;
+  color: #5e2195;
+  margin-bottom: 20px;
+}
+main .pizza-index h1 {
+  margin-bottom: 40px;
+}
+main .pizza-index .pizza-item {
+  margin: 10px 0;
+  padding: 12px;
+  background: #f4f4f4;
+}
+main .pizza-index .pizza-item img {
+  width: 60px;
+  display: inline-block;
+}
+main .pizza-index .pizza-item h4 {
+  display: inline-block;
+  font-weight: normal;
+  margin-left: 20px;
+}
+main .pizza-index .pizza-item h4 a {
+  color: #777;
+  text-decoration: none !important;
+}
