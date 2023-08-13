@@ -12,7 +12,7 @@
         <label for="type">Choose pizza type:</label>
         <select id="type" name="type">
         @foreach($pizzas as $pizza)
-            <option value="{{ $pizza->name }}" data-price="{{ $pizza->price }}">{{ $pizza->name }}</option>
+            <option value="{{ $pizza->name }}" data-price="{{ $pizza->price }}" data-base="{{$pizza->base}}">{{ $pizza->name }}</option>
         @endforeach
         </select>
         <fieldset>
@@ -23,6 +23,7 @@
             <input type="checkbox" name="toppings[]" value="Corn">Corn <br>
         </fieldset>
         <input type="hidden" name="price" id="price">
+        <input type="hidden" name="base" id="base">
         <input type="submit" value="Order Pizza">
     </form>
 </div>

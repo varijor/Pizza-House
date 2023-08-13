@@ -37,6 +37,7 @@ class OrderController extends Controller
          $order->type = request('type');
          $order->total = request('price');
          $order->toppings = request('toppings');
+         $order->base = request('base');
          error_log($order);
          $order->save();
          return redirect("/")->with('msg','Thanks for your order!');
